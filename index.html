@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+  </head>
+
+  <body>
+    <h1>Survey Form</h1>
+
+    <form id="form" method="post" action="https://enw7u145b8im9.x.pipedream.net/">
+      <div class="form-control">
+        <label for="name" id="label-name"> First Name </label>
+
+        <input type="text" id="name" name="first name" placeholder="First name" required />
+      </div>
+      <div class="form-control">
+        <label for="name" id="label-name"> Last Name </label>
+
+        <input type="text" id="name" name="last name" placeholder="Last name" required />
+      </div>
+
+      <div class="form-control">
+        <label for="address" id="label-email"> Address </label>
+        <input
+          type="textbox"
+          style="margin-bottom: 0px"
+          id="address"
+          name="Street Address"
+          placeholder="Street address"
+          required
+        />
+      </div>
+      <div class="form-control">
+        <input
+          class="city"
+          style="width: 95%"
+          type="text"
+          name="State"
+          placeholder="State"
+          required
+        />
+        <input class="city" type="textbox" name="city" placeholder="City" required />
+        <input class="city" type="number" name="Pincode" placeholder="Pincode" required />
+      </div>
+      <div class="form-control">
+        <label for="contact" id="label-name"> Contact Number </label>
+
+        <input
+          type="number"
+          id="contact"
+          name="Contact Number"
+          placeholder="Contact Number"
+          required
+        />
+      </div>
+
+      <div class="form-control">
+        <fieldset id="group1">
+          <label> Quality of product received </label>
+          <label for="recommed-1">
+            <input
+              type="radio"
+              id="recommed-1"
+              name="Quality"
+              value="Excellent"
+              required
+            />Excellent
+          </label>
+          <label for="recommed-2">
+            <input type="radio" id="recommed-2" name="Quality" value="Good"/>Good
+          </label>
+          <label for="recommed-3">
+            <input type="radio" id="recommed-3" name="Quality" value="Bad" />Bad
+          </label>
+        </fieldset>
+      </div>
+      <div class="form-control">
+        <fieldset id="group2">
+          
+          <label> value for money </label>
+          <label for="recommed-4">
+            <input
+              type="radio"
+              id="recommed-4"
+              name="value for money"
+              value="Excellent"
+              required
+            />Excellent
+          </label>
+          <label for="recommed-5">
+            <input type="radio" id="recommed-5" name="value for money" value="Good" />Good
+          </label>
+          <label for="recommed-3">
+            <input type="radio" id="recommed-3" name="value for money" value="Bad"/>Bad
+          </label>
+          </label>
+        </fieldset>
+      </div>
+          
+      <div class="form-control">
+        <fieldset id="group3">
+          <label> Delivery </label>
+          <label for="recommed-4">
+            <input
+              type="radio"
+              id="recommed-4"
+              name="Delivery"
+              value="Excellent"
+              required
+            />Excellent
+          </label>
+          <label for="recommed-5">
+            <input type="radio" id="recommed-5" name="Delivery" value="Good" />Good
+          </label>
+          <label for="recommed-3">
+            <input type="radio" id="recommed-3" name="Delivery" value="Bad"/>Bad
+          </label>
+          </label>
+        </fieldset>
+      </div>
+      
+
+      <button type="submit" value="submit" onclick="alert('THANKYOU!')">Submit</button>
+    </form>
+  </body>
+</html>
